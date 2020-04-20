@@ -1,0 +1,305 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 1110px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.site-navigation {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #555252;
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 486px;
+  margin-top: 8px;
+}
+
+.main-list-nav {
+  float: left;
+}
+
+.main-list-nav:nth-child(1) {
+  margin-right: 34px;
+}
+
+.main-list-nav:nth-child(2) {
+  margin-right: 44px;
+}
+
+.main-list-nav:nth-child(3) {
+  margin-right: 30px;
+}
+
+.main-list-nav:nth-child(4) {
+  margin-right: 28px;
+}
+
+.main-list-nav:nth-child(5) {
+  margin-right: 34px;
+}
+
+.main-list-nav:last-child {
+  margin-right: 0px;
+}
+
+.main-list-nav a {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #302b2b;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #1abc9c;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 48px;
+  line-height: 57px;
+  color: #515151;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 92px;
+}
+
+.title::after {
+  display: block;
+  margin: 0px auto;
+  content: "";
+  height: 7px;
+  width: 164px;
+  background-color: #1abc9c;
+  margin-top: 32px;
+}
+
+h2 {
+  display: block;
+  font-weight: bold;
+  margin: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  background-color: #e9f0fd;
+}
+
+.featured-product {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.product-list {
+  background-color: #323232;
+  float: left;
+  width: 255px;
+  height: 322px;
+}
+
+.product-list:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+
+.product-list:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 21px;
+  float: left;
+  font-weight: 900;
+  text-decoration: none;
+  margin: 0;
+
+  padding-left: 14px;
+  padding-top: 6px;
+}
+
+.product-price {
+  margin: 0;
+  float: right;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 55px;
+  height: 40px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 44%);
+  padding-left: 12px;
+  padding-top: 6px;
+}
+
+.conteiner {
+  width: 255px;
+  height: 40px;
+}
+
+.featured-product li:hover {
+  background-color: #1abc;
+}
+
+.featured-product-wrapper {
+  padding-bottom: 105px;
+}
+
+.informacion-wrapper {
+  margin-bottom: 78px;
+}
+
+.section-title {
+  font-family: "Roboto";
+  font-size: 48px;
+  line-height: 57px;
+  color: #515151;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.section-title::after {
+  display: block;
+  margin: 0px auto;
+  content: "";
+  height: 7px;
+  width: 164px;
+  background-color: #1abc9c;
+  margin-top: 32px;
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  display: block;
+}
+
+.section-item {
+  float: left;
+  width: 350px;
+  list-style: none;
+}
+
+.card-image-top {
+  margin-bottom: 15px;
+}
+
+.card-title {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 48px;
+
+  color: #555252;
+}
+
+.card-title::after {
+  display: block;
+  margin: 0px;
+  content: "";
+  height: 3px;
+  width: 136px;
+  background-color: #1abc9c;
+  margin-top: 15px;
+}
+
+.card-text {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #555252;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+.section-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.button {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 50px;
+  width: 160px;
+  text-transform: capitalize;
+  background-color: #4ec6ab;
+  padding-top: 12px;
+  text-decoration: none;
+
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: silver;
+}
